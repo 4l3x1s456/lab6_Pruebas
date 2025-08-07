@@ -1,0 +1,13 @@
+#Proyecto Node.js
+
+.env
+node_modules/
+coverage/
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+.DS_Store
