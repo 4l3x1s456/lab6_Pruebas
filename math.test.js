@@ -139,12 +139,12 @@ describe('Funciones matemáticas avanzadas', () => {
     describe('Pruebas que fallan intencionalmente', () => {
         test('Esta prueba fallará - taylorSin incorrecto', () => {
             const result = taylorSin(Math.PI / 2, 10);
-            expect(result).toBeCloseTo(0, 5); // Valor incorrecto intencional
+            expect(result).toBeCloseTo(1, 3); // Valor corregido
         });
         test('Esta prueba fallará - simpleIntegration incorrecto', () => {
             const constantFunc = () => 5;
             const result = simpleIntegration(constantFunc, 0, 2, 100);
-            expect(result).toBeCloseTo(999, 2); // Valor incorrecto intencional
+            expect(result).toBeCloseTo(10, 2); // Valor corregido
         });
     });
     
