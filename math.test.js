@@ -135,18 +135,17 @@ describe('Funciones matemáticas avanzadas', () => {
     });
 
     // Pruebas que fallarán intencionalmente (comentadas para el primer commit exitoso)
-    /*
+    
     describe('Pruebas que fallan intencionalmente', () => {
-        test('Esta prueba fallará - taylorExp incorrecto', () => {
-            const result = taylorExp(1, 10);
-            expect(result).toBeCloseTo(999, 5); // Valor incorrecto intencional
+        test('Esta prueba fallará - taylorSin incorrecto', () => {
+            const result = taylorSin(Math.PI / 2, 10);
+            expect(result).toBeCloseTo(0, 5); // Valor incorrecto intencional
         });
-
         test('Esta prueba fallará - simpleIntegration incorrecto', () => {
             const constantFunc = () => 5;
             const result = simpleIntegration(constantFunc, 0, 2, 100);
             expect(result).toBeCloseTo(999, 2); // Valor incorrecto intencional
         });
     });
-    */
+    
 });
